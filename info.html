@@ -132,27 +132,28 @@
                                 </linearGradient>
                             </defs>
                         </svg>
-                        <form action="" onsubmit="return false">
+                        <form name="contact" method="POST" data-netlify="true">
                             <p class="field">
                                 <p class="label">First Name</p>
-                                <input type="text" id="firstName">
+                                <input type="text" id="firstName" name="firstName">
                             </p>
                             <p class="field">
                                 <p class="label">Last Name</p>
-                                <input type="text" id="lastName">
+                                <input type="text" id="lastName" name="lastName">
                             </p>
                             <p class="field">
                                 <p class="label">Email</p>
-                                <input type="email" id="email">
+                                <input type="email" id="email" name="email">
                             </p>
                             <p class="field">
                                 <p class="label">Phone Number</p>
-                                <input type="text" id="phoneNumber">
+                                <input type="text" id="phoneNumber" name="phoneNumber">
                             </p>
                             <p class="field">
                                 <p class="label">Message</p>
-                                <textarea id="Message" cols="" rows="6"></textarea>
-                                <button class="btn" style="border:none" onclick="sendContact();">submit</button>
+                                <textarea id="message" cols="" rows="6" name="message"></textarea>
+                                <button class="btn" type="submit">submit</button>
+                                <div data-netlify-recaptcha="true"></div>
                             </p>
 
                         </form>
